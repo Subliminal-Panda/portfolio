@@ -1,0 +1,37 @@
+﻿.portfolio-sidebar-list-wrapper {
+    .portfolio-item-thumb {
+        padding: 21px;
+
+
+        .portfolio-thumb-img img {
+            width: 100%;
+            border-radius: .5rem;
+            margin-bottom: 1rem;
+        }
+
+        .text-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                color: $offwhite;
+                font-size: 1.5rem;
+            }
+            .actions {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1rem;
+                .action-icon{
+                    cursor:pointer;
+                    color: $cream;
+                    font-size: 1.5rem;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        color:$warning;
+                    }
+                }
+            }
+        }
+    }
+}
