@@ -47,7 +47,6 @@ export default class Login extends Component
                     } )
                     this.props.handleUnsuccessfullAuth();
                 }
-                console.log( "response", response );
             } ).catch( error =>
             {
                 this.setState( {

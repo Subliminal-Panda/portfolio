@@ -5,6 +5,10 @@
   .portfolio-item-wrapper {
     position: relative;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     .portfolio-img-background {
       background-size: cover;
       background-position: center;
