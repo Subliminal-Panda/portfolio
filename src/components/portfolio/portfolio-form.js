@@ -248,7 +248,7 @@ export default class PortfolioForm extends Component {
                     djsConfig={this.djsConfig()}
                     eventHandlers={this.handleThumbDrop()}
                     >
-                        <div className="dz-message">Thumbnail</div>
+                        <div className="dz-message">Thumb</div>
                     </DropzoneComponent>
                     )}
 

@@ -73,7 +73,7 @@ export default class Blog extends Component {
         this.getBlogItems();
     }
     componentWillUnmount() {
-        window.removeEventListener("scroll", this.onScroll, false)
+            window.removeEventListener("scroll", this.onScroll, false)
     }
     render() {
         const blogRecords=this.state.blogItems.map(blogItem => {
@@ -92,7 +92,7 @@ export default class Blog extends Component {
                 <div className="content-container">
                     <div className="new-blog-link">
                         <a onClick={this.handleNewBlogClick}>
-                            New Blog Post
+                            <FontAwesomeIcon icon="plus-circle" />
                         </a>
                     </div>
                     {blogRecords}

@@ -12,17 +12,16 @@
         width: 80vw;
 
         .new-blog-link {
-            margin: 0;
-            margin-top: 3.5rem;
+            position: fixed;
+            right: 0;
+            margin: 3rem 11.5rem 0 0;
             a {
                 color: $dark-teal;
-                font-size: 1.3rem;
-                border-bottom: .1rem dotted $dark-teal;
+                font-size: 3rem;
+                cursor: pointer;
 
                 &:hover {
                     color: $blue;
-                    cursor: pointer;
-                    border-bottom: .1rem dotted $blue;
                 }
             }
         }
@@ -61,7 +60,7 @@
 
 .blog-item-title {
     margin: 3rem 0 1rem 0;
-    max-width: 77vw;
+    max-width: 72vw;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -69,6 +68,7 @@
 
 .blog-item-details {
     margin-left: 1rem;
+    width: 70vw;
     display: -webkit-box;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
