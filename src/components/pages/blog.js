@@ -6,8 +6,8 @@ import BlogItem from '../blog/blog-item';
 import BlogModal from '../blog/blog-modal';
 
 export default class Blog extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state= {
             blogItems: [],
             totalCount: 0,
@@ -90,11 +90,12 @@ export default class Blog extends Component {
 
 
                 <div className="content-container">
+                    {this.props.loggedInStatus === "LOGGED_IN" ? (
                     <div className="new-blog-link">
                         <a onClick={this.handleNewBlogClick}>
                             <FontAwesomeIcon icon="plus-circle" />
                         </a>
-                    </div>
+                    </div> ) : null }
                     {blogRecords}
                     {this.state.isLoading ? (
                         <div className="content-loader">
