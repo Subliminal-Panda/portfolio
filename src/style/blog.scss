@@ -67,12 +67,7 @@
 }
 
 .blog-item-details {
-    margin-left: 1rem;
     color: $blue;
-    width: 70vw;
-    display: -webkit-box;
-    -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    width: 72vw;
     line-height: 1.5rem;
 }

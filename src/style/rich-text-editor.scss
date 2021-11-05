@@ -1,0 +1,49 @@
+﻿.DraftEditor-root {
+    border: 1px solid $teal;
+    color: $charcoal;
+    border-radius: 0.4rem;
+    padding: 0 10px;
+    min-height: 30vh;
+}
+
+.rdw-editor-toolbar {
+    border: 1px solid $light-teal;
+    color: $charcoal;
+    border-radius: 0.4rem;
+
+    .rdw-option-wrapper {
+        border: 1px solid $teal;
+        color: $charcoal;
+        border-radius: 0.4rem;
+        &:hover, &:active, &:focus, &:focus-visible {
+            border: 1px solid $blue;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    .rdw-dropdown-wrapper {
+        border: 1px solid $teal;
+        color: $charcoal;
+        border-radius: 0.4rem;
+
+        &:hover, &:active, &:focus, &:focus-visible {
+            border: 1px solid $blue;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+}
+
+.rdw-image-modal {
+    left: -7.7rem;
+}
+.rdw-emoji-modal {
+    left: -4.9rem;
+}
+.rdw-embedded-modal {
+    left: -2rem;
+}
+.rdw-colorpicker-modal {
+    left: -5rem;
+}

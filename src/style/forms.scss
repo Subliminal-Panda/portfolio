@@ -20,6 +20,7 @@
     overflow: hidden;
     background-color: transparent;
     outline: none;
+    cursor: pointer;
 }
 
 .dz-box {
@@ -30,4 +31,7 @@
 option {
     background-color: $light-teal;
     color: $blue;
+    &:hover {
+        cursor: pointer !important;
+    }
 }
