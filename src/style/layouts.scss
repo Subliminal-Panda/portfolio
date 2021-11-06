@@ -1,0 +1,51 @@
+﻿.content-page-wrapper {
+    width: 100vw;
+    height: calc(100vh - 81px);
+    overflow: none;
+}
+.content-left-column {
+    height: calc(100vh - 81px);
+    overflow: hidden;
+}
+
+.content-right-column {
+    max-height: calc(100vh - 81px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.contact-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1, .contact-line {
+        color: $charcoal;
+        font-weight: 900;
+    }
+
+    h1 {
+        padding-left: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+.contact-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .icon {
+        font-size: 2rem;
+        color: $blue;
+    }
+
+    .icon, h2 {
+        padding: 0 1rem;
+    }
+}
