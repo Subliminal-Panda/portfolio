@@ -22,13 +22,9 @@ export default class PortfolioItem extends Component
         this.setState( { portfolioItemClass: "" } );
     }
 
-    handleOpenUrl (url) {
-        window.open(`http://${url}`).focus();
-    }
-
     render()
     {
-        const { id, description, thumb_image_url, logo_url, url } = this.props.item;
+        const { id, description, thumb_image_url, logo_url, } = this.props.item;
         return (
             <Link to={`/portfolio/${id}`}>
                 <div
@@ -47,7 +43,7 @@ export default class PortfolioItem extends Component
 
                     <div className="img-text-wrapper">
                         <div className="logo-wrapper">
-                            <img src={ logo_url } />
+                            <img className="logo" src={ logo_url } />
                         </div>
 
                         <div className="subtitle">{ description }</div>

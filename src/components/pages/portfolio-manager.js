@@ -4,6 +4,8 @@ import axios from "axios";
 import PortfolioSidebarList from "../portfolio/portfolio-sidebar-list";
 import PortfolioForm from "../portfolio/portfolio-form";
 
+//TODO: create "edit duplicate" icon with a "+ pencil" or "+" shape
+
 export default class PortfolioManager extends Component {
   constructor() {
     super();
@@ -28,12 +30,14 @@ export default class PortfolioManager extends Component {
   }
 
   handleEditClick(portfolioItem) {
+    document.documentElement.scrollTop = 0;
     this.setState({
       portfolioToEdit: portfolioItem
     });
   }
 
   handleDeleteClick(portfolioItem) {
+    document.documentElement.scrollTop = 0;
     axios
       .delete(
         `https://api.devcamp.space/portfolio/portfolio_items/${portfolioItem.id}`,
@@ -58,6 +62,7 @@ export default class PortfolioManager extends Component {
   }
 
   handleNewFormSubmission(portfolioItem) {
+    document.documentElement.scrollTop = 0;
     this.setState({
       portfolioItems: [portfolioItem].concat(this.state.portfolioItems)
     });
@@ -68,6 +73,7 @@ export default class PortfolioManager extends Component {
   }
 
   getPortfolioItems() {
+    document.documentElement.scrollTop = 0;
     axios
       .get(
         "https://tristanmouritsen.devcamp.space/portfolio/portfolio_items?order_by=created_at&direction=desc",

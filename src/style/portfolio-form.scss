@@ -10,8 +10,7 @@
 
     .image-uploaders {
         @include base-grid();
-        height: 11rem;
-        margin-bottom: 2rem;
+        height: 11.5rem;
 
         .portfolio-manager-image-wrapper {
             display:flex;
@@ -30,7 +29,7 @@
             }
             img {
                 width: 100%;
-                height: 11.5rem;
+                height: 10rem;
                 object-fit: cover;
                 border: .1rem solid transparent;
                 border-radius: 1rem;
@@ -40,7 +39,7 @@
 }
 div.filepicker, div.dropzone, div.dz-box, div.dz-clickable{
     background-color: $light-teal;
-    min-height: 11.5rem;
+    height: 11.5rem;
     border: .1rem dotted $blue;
     border-radius: 1rem;
 }
@@ -71,4 +70,7 @@ div.filepicker-file-icon::after {
     font-size: .8rem;
     color: $offwhite;
     background-color: $blue;
+}
+.portfolio-submit {
+    width: 20%;
 }

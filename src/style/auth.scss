@@ -11,6 +11,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $offwhite;
+    background-color: rgb(232, 240, 254);
+
+    .auth-form-wrapper {
+      @include input-element();
+      @include base-grid();
+      grid-gap: 1.25rem;
+      padding: 2.75rem;
+
+      .form-group {
+        display: flex;
+
+        input {
+          padding: .4rem 1rem;
+          font-family: "Capriola", sans-serif;
+        }
+
+        svg {
+          font-size: 2rem;
+          color: $teal;
+          margin-right: 1rem;
+        }
+      }
+    }
   }
 }

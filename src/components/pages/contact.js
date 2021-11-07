@@ -1,11 +1,11 @@
 ﻿import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import contactImage from "../../../static/assets/images/auth/login.jpg"
+import contactImage from "../../../static/assets/images/bio/contactImage.jpg"
 
 //TODO: make phone # pull up phone dialer on device, populating phone #
 //TODO: make email a "mailto" link
 //TODO: make address link to google maps, populating from "address" field
-//TODO: add social media icons, including linkedin, github, codepen, etc.
+//TODO: add social media icons, including linkedin, github, codepen,
 
 export default function Contact () {
     return (

@@ -11,7 +11,7 @@ export default class BlogForm extends Component {
         this.state = {
             id: "",
             title: "",
-            blog_status: "",
+            blog_status: "draft",
             content: "",
             featured_image: "",
             apiUrl: "https://tristanmouritsen.devcamp.space/portfolio/portfolio_blogs",
@@ -47,7 +47,7 @@ export default class BlogForm extends Component {
                 content: this.props.blog.content,
                 apiUrl: `https://tristanmouritsen.devcamp.space/portfolio/portfolio_blogs/${this.props.blog.id}`,
                 apiAction: "patch",
-            })
+            });
         }
     }
 
@@ -116,7 +116,6 @@ export default class BlogForm extends Component {
                     featured_image: "",
                 });
                 if(this.props.editMode) {
-                    //Update blog detail
                     this.props.handleUpdateFormSubmission(response.data.portfolio_blog);
                 } else {
 
@@ -155,7 +154,7 @@ export default class BlogForm extends Component {
                     name="blog_status"
                     onChange={this.handleChange}
                     placeholder="Blog Status"
-                    value={this.state.blog_status ? this.state.blog_status : "draft"}
+                    value={this.state.blog_status}
                     >
                         <option value="draft">Draft</option>
                         <option value="published">Published</option>

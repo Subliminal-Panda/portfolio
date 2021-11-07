@@ -1,0 +1,55 @@
+﻿.portfolio-detail-wrapper {
+    width: 100vw;
+
+    .banner {
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    }
+
+    .portfolio-detail-description-wrapper {
+        text-align: center;
+        margin: 2rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+        .description {
+            font-size: 2rem;
+        }
+
+
+    }
+    .bottom-content-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .thumbnail-box {
+            display: flex;
+            width: 40vw;
+            height: 30vh;
+            align-items: center;
+            justify-content: center;
+            border: .25rem solid black;
+            border-radius: 1rem;
+        }
+
+        .site-link {
+            padding: .3rem 1.5rem .8rem;
+            margin: 0;
+            text-decoration: none;
+            height: 1rem;
+            text-transform: capitalize;
+            filter: none;
+            box-shadow: 0 0 60px rgb(0, 0, 0);
+        }
+    }
+}
+.logo {
+    border-radius: 1rem;
+}

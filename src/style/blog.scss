@@ -9,12 +9,32 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
+        width: 85vw;
+
+        .admin-blog-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .blog-delete {
+                align-self: flex-start;
+                cursor: pointer;
+                color: $dark-teal;
+                font-size: 1.75rem;
+                position: relative;
+                right: 5.5rem;
+                top: 4.4rem;
+
+                &:hover {
+                    color: $warning;
+                }
+            }
+        }
 
         .new-blog-link {
             position: fixed;
             right: 0;
-            margin: 3rem 11.5rem 0 0;
+            margin: 3rem 9rem 0 0;
             a {
                 color: $dark-teal;
                 font-size: 3rem;
@@ -59,7 +79,9 @@
 }
 
 .blog-item-title {
-    margin: 3rem 0 1rem 0;
+    position: relative;
+    right: 2rem;
+    top: 1rem;
     max-width: 72vw;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -68,6 +90,6 @@
 
 .blog-item-details {
     color: $blue;
-    width: 72vw;
+    width: 74vw;
     line-height: 1.5rem;
 }
