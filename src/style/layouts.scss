@@ -1,15 +1,15 @@
 ﻿.content-page-wrapper {
     width: 100vw;
-    height: calc(100vh - 81px);
+    height: calc(100vh - 85px);
     overflow: none;
 }
 .content-left-column {
-    height: calc(100vh - 81px);
+    height: calc(100vh - 85px);
     overflow: hidden;
 }
 
 .content-right-column {
-    max-height: calc(100vh - 81px);
+    max-height: calc(100vh - 85px);
     overflow: hidden;
     display: flex;
     align-items: center;
