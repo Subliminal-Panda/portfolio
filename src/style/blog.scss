@@ -34,7 +34,7 @@
         .new-blog-link {
             position: fixed;
             right: 0;
-            margin: 3rem 9rem 0 0;
+            margin: 3rem 12rem 0 0;
             a {
                 color: $dark-teal;
                 font-size: 3rem;
@@ -83,13 +83,10 @@
     right: 2rem;
     top: 1rem;
     max-width: 72vw;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 .blog-item-details {
     color: $blue;
-    width: 74vw;
+    width: 76vw;
     line-height: 1.5rem;
 }
