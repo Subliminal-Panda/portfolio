@@ -1,7 +1,7 @@
 ﻿.auth-page-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: calc(100vh - 84px);
+  height: calc(100vh - 85px);
 
   .left-column {
     background-size: cover;
@@ -22,9 +22,9 @@
       .form-group {
         display: flex;
 
-        input {
+        input, input:-internal-autofill-selected, input:-webkit-autofill, input:autofill {
           padding: .4rem 1rem;
-          font-family: "Capriola", sans-serif;
+          font-family: "Capriola", sans-serif !important;
         }
 
         svg {

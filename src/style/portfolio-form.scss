@@ -1,7 +1,7 @@
 ﻿.portfolio-form-wrapper {
     @include base-grid();
     grid-template-columns: 1fr;
-    padding: 42px;
+    padding: 2.75rem;
 
     @include input-element();
     input {
@@ -10,6 +10,7 @@
 
     .image-uploaders {
         @include base-grid();
+        grid-gap: 1.5rem;
         height: 11.5rem;
 
         .portfolio-manager-image-wrapper {
@@ -38,6 +39,7 @@
     }
 }
 div.filepicker, div.dropzone, div.dz-box, div.dz-clickable{
+    padding: 0;
     background-color: $light-teal;
     height: 11.5rem;
     border: .1rem dotted $blue;
@@ -49,7 +51,7 @@ div.filepicker, div.dropzone, div.dz-box, div.dz-clickable{
     text-align: center;
 }
 div.filepicker-file-icon {
-    margin: 2.5rem .5rem 2rem;
+    margin: 3.25rem .5rem 2rem;
 }
 div.filepicker-file-icon::before {
     border: 2px solid $blue;

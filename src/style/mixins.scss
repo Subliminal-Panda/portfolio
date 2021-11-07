@@ -20,24 +20,24 @@
 @mixin input-element {
     input {
         color: $charcoal;
-        padding: 5px 0px;
+        padding: .3rem 0;
         width: 100%;
-        border: 0px;
-        border-bottom: 1px solid $teal;
+        border: 0;
+        border-bottom: .1rem solid $teal;
         background-color: transparent;
         transition: 0.5s all ease-in-out;
         font-family: "Capriola", sans-serif;
         font-size: 1.1rem;
-        margin-bottom:21px;
+        margin-bottom: 1.5rem;
 
         &:focus {
             outline: none;
-            border-bottom: 1px solid $dark-teal;
+            border-bottom: .1rem solid $dark-teal;
         }
     }
 }
 
 @mixin base-grid {
     display: grid;
-    grid-gap: 21px;
+    grid-gap: 1.3rem;
 }

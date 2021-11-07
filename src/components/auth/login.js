@@ -60,9 +60,6 @@ export default class Login extends Component
 
     render()
     {
-        const loginStyles={
-            backgroundColor: "transparent !important",
-        }
         return (
             <div>
                 <h1>LOGIN TO ACCESS ADMIN DASHBOARD</h1>

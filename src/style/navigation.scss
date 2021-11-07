@@ -1,11 +1,11 @@
 ﻿.nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 2rem;
 
   .right-side {
     a {
-      margin-left: 15px;
+      margin-left: 1rem;
       cursor: pointer;
       color: $teal;
       transition: 0.5s ease-in-out;
@@ -23,7 +23,7 @@
   .nav-link-wrapper {
     border-bottom: 1px solid transparent;
     transition: 0.5s ease-in-out;
-    margin-right: 20px;
+    margin-right: 1.25rem;
     text-transform: uppercase;
 
     a {
