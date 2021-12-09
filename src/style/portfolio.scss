@@ -33,16 +33,21 @@
         transition: 1s ease-in-out;
         color: $teal;
         opacity: 0%;
+        font-size: 1vw;
       }
     }
 
     .img-text-wrapper:hover .subtitle {
       opacity: 100%;
+      font-size: 1vw;
       font-weight: 400;
     }
 
     .logo-wrapper img {
-      width: 145px;
+      border-radius: 2vw;
+      padding: .75vw;
+      background-color: rgba(0,0,0,.35);
+      width: 7vw;
     }
   }
 }
