@@ -25,19 +25,22 @@ export default function Contact () {
                         <div className="icon" >
                             <FontAwesomeIcon icon="phone-alt" />
                         </div>
-                        <h2>(555) 555-5555</h2>
+                        <h2>(801) 888-2444</h2>
                     </div>
                     <div className="contact-line">
                         <div className="icon" >
                             <FontAwesomeIcon icon="envelope-open-text" />
                         </div>
-                        <h2>madeupemail@ymail.com</h2>
+                        <h2>tmouritsen57@gmail.com</h2>
                     </div>
                     <div className="contact-line">
                         <div className="icon" >
                             <FontAwesomeIcon icon="map-marked-alt" />
                         </div>
-                        <h2>5700 N. 119 W. Imaginary Ln., Bremerton, WA 98314</h2>
+                        <div>
+                            <h2>10251 S. CountryWood Dr.</h2>
+                            <h2>Sandy, UT 84092</h2>
+                        </div>
                     </div>
                 </div>
             </div>
