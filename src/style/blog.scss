@@ -60,6 +60,17 @@
             margin-top: 3rem;
             font-size: 2.15rem;
             color: $teal;
+            text-shadow:
+                        .1rem .1rem $dark-teal,
+                        -.1rem -.1rem $dark-teal,
+                        -.1rem .1rem $dark-teal,
+                        .1rem -.1rem $dark-teal,
+                        .11rem 0rem $dark-teal,
+                        -.11rem 0rem $dark-teal,
+                        0rem .11rem $dark-teal,
+                        0 -.11rem $dark-teal;
+            // -webkit-text-stroke: .05rem $charcoal;
+            // text-stroke: .05rem $charcoal;
         }
 
         .featured-image-wrapper {
