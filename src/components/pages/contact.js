@@ -44,7 +44,7 @@ export default function Contact () {
                             <h2>Sandy, UT 84092</h2>
                         </div>
                     </div>
-                    <Link className="external-link" to="https://github.com/Subliminal-Panda" >
+                    <Link className="external-link" to={{ pathname: "https://github.com/Subliminal-Panda" }} target="_blank" >
                         <div href="https://github.com/Subliminal-Panda" className="contact-line">
                             <div className="icon" >
                                 <FontAwesomeIcon href="https://github.com/Subliminal-Panda" icon={faGithub} />
@@ -54,7 +54,7 @@ export default function Contact () {
                             </h2>
                         </div>
                     </Link>
-                    <Link className="external-link" to="https://www.linkedin.com/in/tmouritsen57/" >
+                    <Link className="external-link" to={{ pathname: "https://www.linkedin.com/in/tmouritsen57/" }} target="_blank" >
                         <div className="contact-line">
                             <div className="icon" >
                                 <FontAwesomeIcon href="https://www.linkedin.com/in/tmouritsen57/" icon={faLinkedinIn} />
