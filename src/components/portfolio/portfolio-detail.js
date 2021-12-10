@@ -78,7 +78,7 @@ export default class PortfolioDetail extends Component {
                 </div>
                 <div className="bottom-content-wrapper">
                     <div style={thumbnailStyles} className="thumbnail-box">
-                        <a href={`http://${url}`} className="btn site-link" target="_blank">
+                        <a href={url} className="btn site-link" target="_blank">
                         VISIT: {name}
                         </a>
                     </div>
