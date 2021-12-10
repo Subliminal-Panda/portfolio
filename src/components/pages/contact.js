@@ -1,5 +1,6 @@
 ﻿import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import contactImage from "../../../static/assets/images/bio/contactImage.jpg"
 
 //TODO: make phone # pull up phone dialer on device, populating phone #
@@ -41,6 +42,22 @@ export default function Contact () {
                             <h2>10251 S. CountryWood Dr.</h2>
                             <h2>Sandy, UT 84092</h2>
                         </div>
+                    </div>
+                    <div className="contact-line">
+                        <div className="icon" >
+                            <FontAwesomeIcon icon={faGithub} />
+                        </div>
+                        <h2>
+                            https://github.com/Subliminal-Panda
+                        </h2>
+                    </div>
+                    <div className="contact-line">
+                        <div className="icon" >
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </div>
+                        <h2>
+                        https://www.linkedin.com/in/tmouritsen57/
+                        </h2>
                     </div>
                 </div>
             </div>
