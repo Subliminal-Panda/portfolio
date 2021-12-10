@@ -57,7 +57,7 @@ export default class PortfolioDetail extends Component {
         }
 
         const logoStyles = {
-            height: "35vh",
+            height: "25vh",
             width: "auto",
         }
 
