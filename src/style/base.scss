@@ -1,4 +1,10 @@
-﻿body {
+﻿html {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: 1.5vmin;
+}
+
+body {
   margin: 0;
   font-family: "Capriola", sans-serif;
 }
