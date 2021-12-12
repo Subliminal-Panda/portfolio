@@ -1,7 +1,7 @@
 ﻿.auth-page-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: calc(100vh - 85px);
+  height: calc(100vh - (5.75rem));
 
   .left-column {
     background-size: cover;
@@ -29,7 +29,7 @@
 
         svg {
           font-size: 2rem;
-          color: $teal;
+          color: $text-teal;
           margin-right: 1rem;
         }
       }

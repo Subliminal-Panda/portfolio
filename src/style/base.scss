@@ -1,7 +1,9 @@
 ﻿html {
   min-width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   font-size: 1.5vmin;
+  cursor: default;
 }
 
 body {
@@ -16,6 +18,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+    min-width: 100vw;
+    max-width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
+
+    div {
+      max-width: 100vw;
+    }
 }

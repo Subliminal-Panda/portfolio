@@ -1,15 +1,18 @@
 ﻿.content-page-wrapper {
     width: 100vw;
-    height: calc(100vh - 85px);
-    overflow: none;
+    height: calc(100vh - (5.75rem));
+    max-height: calc(100vh - (5.75rem));
+    overflow: hidden;
 }
 .content-left-column {
-    height: calc(100vh - 85px);
+    height: calc(100vh - (5.75rem));
+    max-height: calc(100vh - (5.75rem));
     overflow: hidden;
 }
 
 .content-right-column {
-    max-height: calc(100vh - 85px);
+    height: calc(100vh - (5.75rem));
+    max-height: calc(100vh - (5.75rem));
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -59,5 +62,19 @@
 }
 
 .external-link {
-    text-decoration: underline $charcoal;
+    .contact-line {
+        .icon, h2 {
+
+            text-decoration: underline $charcoal;
+            transition: .3s ease-in-out;
+
+        }
+    }
+    .contact-line:hover {
+        .icon, h2 {
+
+                color: $dark-teal;
+                text-decoration: underline $dark-teal;
+        }
+    }
 }

@@ -1,14 +1,18 @@
 ﻿.nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  margin: 2rem;
+
 
   .right-side {
+    display: flex;
+    line-height: 1.75rem;
+    font-size: 1.75rem;
     a {
       margin-left: 1rem;
       cursor: pointer;
-      color: $teal;
-      transition: 0.5s ease-in-out;
+      color: $text-teal;
+      transition: 0.3s ease-in-out;
 
       &:hover {
         color: $blue;
@@ -20,9 +24,15 @@
     display: flex;
   }
 
+  .left-side, .right-side {
+    height: 1.75rem;
+    max-height: 1.75rem;
+    min-height: 1.75rem;
+    align-items: center;
+  }
+
   .nav-link-wrapper {
-    border-bottom: 1px solid transparent;
-    transition: 0.5s ease-in-out;
+
     margin-right: 1.25rem;
     text-transform: uppercase;
 
@@ -30,17 +40,30 @@
       color: $grey;
       text-decoration: none;
       &:hover {
-        color: black;
+        color: $dark-teal;
       }
     }
 
-    &:hover {
-      border-bottom: 1px solid black;
+
+    .nav-link {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      border-bottom: .2rem solid transparent;
+
+      &:hover {
+        border-bottom: .2rem solid $dark-teal;
+      }
     }
 
     .nav-link-active {
-      border-bottom: 1px solid black;
+      border-bottom: .2rem solid black;
       color: black;
+      cursor: default;
+
+      &:hover {
+        border-bottom: .2rem solid black;
+        color: black;
+      }
     }
   }
 }

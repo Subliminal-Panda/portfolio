@@ -5,7 +5,7 @@
     font-weight: 500;
     border: .2rem solid $dark-teal;
     border-radius: 0.5rem;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: $teal;
     color: $blue;
     padding: .25rem .5rem;
@@ -24,9 +24,9 @@
         padding: .3rem 0;
         width: 100%;
         border: 0;
-        border-bottom: .1rem solid $teal;
+        border-bottom: .1rem solid $text-teal;
         background-color: transparent;
-        transition: 0.5s all ease-in-out;
+        transition: 0.3s all ease-in-out;
         font-family: "Capriola", sans-serif;
         font-size: 1.1rem;
         margin-bottom: 1.5rem;

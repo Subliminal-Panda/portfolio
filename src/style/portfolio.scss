@@ -5,6 +5,7 @@
   .portfolio-item-wrapper {
     background-color: rgb(160, 160, 160);
     position: relative;
+    overflow: hidden;
 
     &:hover {
       cursor: pointer;
@@ -14,7 +15,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 350px;
+      height: 38vh;
       width: 100%;
     }
 
@@ -23,7 +24,7 @@
       top: 0;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       height: 100%;
       text-align: center;
@@ -31,10 +32,15 @@
       padding-right: 2.5vw;
 
       .item-title {
-        margin-bottom: 2vh;
-        font-size: 2vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        // gap: 1vw;
+        // margin-bottom: 2vh;
+        font-size: 2.75vmax;
         color: $pink;
-        transition: .5s ease-in-out;
+        transition: .3s ease-in-out;
         opacity: 0%;;
       }
 
@@ -44,10 +50,10 @@
 
         .subtitle {
           padding-left: 1.5rem;
-          transition: .5s ease-in-out;
+          transition: .3s ease-in-out;
           color: $teal;
           opacity: 0%;
-          font-size: 1vw;
+          font-size: 1.5vmax;
           font-weight: 400;
         }
       }
@@ -60,18 +66,31 @@
       opacity: 100%;
     }
 
-    .logo-wrapper img {
-      border-radius: 1.5vw;
-      padding: .5vw;
-      background-color: rgba(139, 139, 139, 0.5);
-      height: 6vw;
+    .logo-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 3rem;
+      img {
+        border-radius: 1.5vw;
+        padding: .5vw;
+        background-color: rgba(139, 139, 139, 0.5);
+        height: 6vw;
+      }
     }
+  }
+  .portfolio-item-wrapper .img-text-wrapper .touch-screen-text {
+    opacity: 100%;
+  }
+
+  .portfolio-item-wrapper .img-text-wrapper .logo-subtitle-wrapper .touch-screen-text {
+    opacity: 100%;
   }
 }
 
 .image-blur {
   background-color: rgb(160, 160, 160);
-  transition: 1s;
+  transition: .3s ease-in-out;
   filter: brightness(20%);
 }
 .filter-buttons {

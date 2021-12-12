@@ -8,7 +8,9 @@ export default class PortfolioItem extends Component
         super( props );
 
         this.state = {
-            portfolioItemClass: ""
+            portfolioItemClass: "",
+            touchScreenText: "",
+            touchChecked: false
         };
     }
 
@@ -21,6 +23,23 @@ export default class PortfolioItem extends Component
     handleMouseLeave()
     {
         this.setState( { portfolioItemClass: "" } );
+    }
+
+    componentDidUpdate() {
+        this.isTouchDevice();
+    }
+
+    componentDidMount() {
+        this.isTouchDevice();
+    }
+
+    isTouchDevice(){
+        if (('ontouchstart' in window && !this.state.touchChecked) ||
+           (navigator.maxTouchPoints > 0 && !this.state.touchChecked) ||
+           (navigator.msMaxTouchPoints > 0 && !this.state.touchChecked)) {
+            this.setState( { portfolioItemClass: "image-blur", touchScreenText: "touch-screen-text",
+        touchChecked: true } )
+           };
     }
 
     render()
@@ -43,14 +62,16 @@ export default class PortfolioItem extends Component
                     />
 
                     <div className="img-text-wrapper">
-                        <div className="item-title">{ name }</div>
-                        <div className="logo-subtitle-wrapper" >
-
+                        <div className={"item-title " + this.state.touchScreenText }>
                             <div className="logo-wrapper">
                                 <img className="logo" src={ logo_url } />
                             </div>
+                        { name }
+                        </div>
+                        <div className="logo-subtitle-wrapper" >
 
-                            <div className="subtitle">{ description }</div>
+
+                            <div className={"subtitle " + this.state.touchScreenText }>{ description }</div>
                         </div>
                     </div>
                 </div>
