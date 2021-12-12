@@ -21,6 +21,7 @@ export default class PortfolioContainer extends Component
     }
 
     handleResetFilter() {
+        console.log("portfolio items:", this.state.data)
         this.setState({
             filtered: this.state.data
         })
@@ -35,6 +36,7 @@ export default class PortfolioContainer extends Component
                 return item.category === filter;
             } )
         } )
+        console.log("filtered:", this.state.filtered)
     }
 
     getPortfolioItems()
@@ -44,8 +46,8 @@ export default class PortfolioContainer extends Component
             .then( response =>
             {
                 this.setState( {
-                    filtered: response.data.portfolio_items,
-                    data: response.data.portfolio_items
+                    filtered: response.data.portfolio_items.sort((first, second) => {return (first.position - second.position)}),
+                    data: response.data.portfolio_items.sort((first, second) => {return (first.position - second.position)})
                 } );
             } )
             .catch( error =>
@@ -58,6 +60,7 @@ export default class PortfolioContainer extends Component
     {
         return this.state.filtered.map( item =>
         {
+            console.log("portfolio item:", item)
             return <PortfolioItem key={ item.id } item={ item } />;
         } );
     }
@@ -90,7 +93,7 @@ export default class PortfolioContainer extends Component
                         All Categories
                     </button>
                 </div>
-                <div className="portfolio-items-wrapper">
+                <div className="portfolio-items-wrapper" >
                     { this.portfolioItems() }
                 </div>
             </div>

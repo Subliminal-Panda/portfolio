@@ -15,6 +15,7 @@ export default class PortfolioItem extends Component
     handleMouseEnter()
     {
         this.setState( { portfolioItemClass: "image-blur" } );
+        console.log("position:", this.props.item.position);
     }
 
     handleMouseLeave()
@@ -24,7 +25,7 @@ export default class PortfolioItem extends Component
 
     render()
     {
-        const { id, description, thumb_image_url, logo_url, } = this.props.item;
+        const { name, id, description, thumb_image_url, logo_url, } = this.props.item;
         return (
             <Link to={`/portfolio/${id}`}>
                 <div
@@ -42,11 +43,15 @@ export default class PortfolioItem extends Component
                     />
 
                     <div className="img-text-wrapper">
-                        <div className="logo-wrapper">
-                            <img className="logo" src={ logo_url } />
-                        </div>
+                        <div className="item-title">{ name }</div>
+                        <div className="logo-subtitle-wrapper" >
 
-                        <div className="subtitle">{ description }</div>
+                            <div className="logo-wrapper">
+                                <img className="logo" src={ logo_url } />
+                            </div>
+
+                            <div className="subtitle">{ description }</div>
+                        </div>
                     </div>
                 </div>
             </Link>
