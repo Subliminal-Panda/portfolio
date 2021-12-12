@@ -31,6 +31,7 @@
 
                 }
             }
+
             .dynamic-nav-link-wrapper {
                 grid-row: 2;
                 grid-column: 1 / span 4;
@@ -46,6 +47,7 @@
     }
 
     .homepage-wrapper {
+
         .filter-buttons {
             width: calc(100vw - 1rem);
             display: grid;
@@ -60,15 +62,33 @@
                 width: auto;
             }
         }
+
         .portfolio-items-wrapper {
             grid-template-columns: 1fr 1fr;
+
             .portfolio-item-wrapper {
+
                 .portfolio-img-background {
                     height: 28vh;
-                    // filter: brightness(40%);
                 }
+
                 .img-text-wrapper {
-                    padding: 0 2.5vmin;
+                    .item-title-wrap {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        .logo-wrapper .logo {
+                            height: 8vmax;
+                        }
+                        .item-title {
+                            font-size: 4vmax;
+
+                        }
+                    }
+                    .subtitle {
+                        font-size: 2.5vmax;
+                    }
                 }
             }
         }

@@ -62,11 +62,13 @@ export default class PortfolioItem extends Component
                     />
 
                     <div className="img-text-wrapper">
-                        <div className={"item-title " + this.state.touchScreenText }>
+                        <div className="item-title-wrap">
                             <div className="logo-wrapper">
                                 <img className="logo" src={ logo_url } />
                             </div>
-                        { name }
+                            <div className={"item-title " + this.state.touchScreenText }>
+                                { name }
+                            </div>
                         </div>
                         <div className="logo-subtitle-wrapper" >
 

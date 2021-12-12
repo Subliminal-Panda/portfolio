@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 
   .portfolio-item-wrapper {
+
     background-color: rgb(160, 160, 160);
     position: relative;
     overflow: hidden;
@@ -31,20 +32,24 @@
       padding-left: 2.5vw;
       padding-right: 2.5vw;
 
-      .item-title {
+      .item-title-wrap {
+        margin: 2rem 0 0;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        // gap: 1vw;
-        // margin-bottom: 2vh;
-        font-size: 2.75vmax;
-        color: $pink;
-        transition: .3s ease-in-out;
-        opacity: 0%;;
+
+        .item-title {
+          flex: 1;
+          font-size: 2.75vmax;
+          color: $pink;
+          transition: .3s ease-in-out;
+          opacity: 0%;;
+        }
       }
 
       .logo-subtitle-wrapper {
+        flex: 1;
         display: flex;
         align-items: center;
 
@@ -55,6 +60,7 @@
           opacity: 0%;
           font-size: 1.5vmax;
           font-weight: 400;
+          // height: 7vmax;
         }
       }
     }
@@ -70,7 +76,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 3rem;
+
       img {
         border-radius: 1.5vw;
         padding: .5vw;
@@ -79,7 +85,7 @@
       }
     }
   }
-  .portfolio-item-wrapper .img-text-wrapper .touch-screen-text {
+  .portfolio-item-wrapper .img-text-wrapper .item-title-wrap .touch-screen-text {
     opacity: 100%;
   }
 

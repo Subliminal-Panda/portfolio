@@ -1,0 +1,22 @@
+﻿@media screen and (max-aspect-ratio: 1450/1000) {
+    .portfolio-items-wrapper {
+
+        .portfolio-item-wrapper {
+
+            .img-text-wrapper {
+
+                .item-title-wrap {
+                    flex-direction: column;
+                    gap: 1.5rem;
+
+                    .logo-wrapper {
+                        .logo {
+                            height: 7vmax;
+                            padding: .75vmax;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
