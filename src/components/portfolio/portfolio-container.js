@@ -100,7 +100,3 @@ export default class PortfolioContainer extends Component
         );
     }
 }
-
-//if you call "return" anywhere in a JS function, the rest of the function won't load!
-//"handle" name isn't necessary, but convention-- it tells you a click handler will use it.
-//https://tristanmouritsen.devcamp.space/portfolio/portfolio_items

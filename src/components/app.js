@@ -157,9 +157,3 @@ export default class App extends Component
     );
   }
 }
-
-
-//you can only return one item (div, etc.) per component!! Javascript functions only return 1 item!! You can nest it though.
-              //last one is like the "else" in a conditional. It's the default if nothing else matches.
-
-              //also on an unrelated note, look up conditional rendering!!
