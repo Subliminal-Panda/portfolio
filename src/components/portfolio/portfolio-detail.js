@@ -1,6 +1,7 @@
 ﻿import React, { Component } from "react";
 import axios from "axios";
 
+import SlideshowContainer from "../pages/slideshows/sketches";
 
 
 export default class PortfolioDetail extends Component {

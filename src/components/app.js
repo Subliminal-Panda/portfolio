@@ -13,6 +13,12 @@ import PortfolioDetail from "./portfolio/portfolio-detail";
 import Auth from "./pages/auth";
 import NoMatch from "./pages/no-match";
 import Icons from "../helpers/icons"
+import Sketches from "./pages/slideshows/sketches"
+import BadToTheBone from "./pages/slideshows/badToTheBone"
+import SubliminalPanda from "./pages/slideshows/subliminalPanda"
+import PemdaksCreations from "./pages/slideshows/pemdaksCreations"
+import MotorcycleDinosaur from "./pages/slideshows/motorcycleDinosaur"
+import Misc from "./pages/slideshows/misc"
 
 export default class App extends Component
 {
@@ -120,6 +126,12 @@ export default class App extends Component
 
               <Route path="/about" component={ About } />
               <Route path="/contact" component={ Contact } />
+              <Route path="/sketches" component={ Sketches } />
+              <Route path="/badToTheBone" component={ BadToTheBone } />
+              <Route path="/subliminalPanda" component={ SubliminalPanda } />
+              <Route path="/pemdaksCreations" component={ PemdaksCreations } />
+              <Route path="/motorcycleDinosaur" component={ MotorcycleDinosaur } />
+              <Route path="/misc" component={ Misc } />
               <Route path="/blog"
               render={props => (
                 <Blog {...props} loggedInStatus={this.state.loggedInStatus} />

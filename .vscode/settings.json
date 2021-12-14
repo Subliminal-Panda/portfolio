@@ -1,0 +1,11 @@
+{
+    "javascript.suggest.enabled": false,
+    "javascript.suggest.includeAutomaticOptionalChainCompletions": false,
+    "typescript.suggest.enabled": false,
+    "typescript.suggest.includeAutomaticOptionalChainCompletions": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "javascript.suggest.autoImports": false,
+    "javascript.suggest.classMemberSnippets.enabled": false,
+    "editor.acceptSuggestionOnCommitCharacter": false
+}
