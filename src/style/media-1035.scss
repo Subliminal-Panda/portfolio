@@ -93,4 +93,52 @@
             }
         }
     }
+
+    .portfolio-detail-wrapper {
+
+        .banner {
+            height: 30vh;
+
+            .logo {
+                border-radius: 2rem;
+                padding: 1.5vw;
+            }
+        }
+
+        .portfolio-detail-description-wrapper {
+
+            .description {
+                font-size: 3vw;
+            }
+
+
+        }
+        .bottom-content-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .thumbnail-box {
+                width: 90vw;
+                height: calc(66vh - (5.75rem + 24vw));
+                align-items: center;
+                justify-content: center;
+                border: .5rem solid black;
+                border-radius: 1rem;
+            }
+
+            .site-link {
+                padding: .75rem 1.5rem .8rem;
+                margin: 0;
+                // font-size: 4.5vw;
+                text-decoration: none;
+                text-transform: capitalize;
+                filter: none;
+                border-radius: 2vmin;
+                box-shadow: 0 0 6rem rgb(0, 0, 0);
+            }
+        }
+    }
 }

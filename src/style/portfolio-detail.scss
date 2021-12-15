@@ -38,21 +38,22 @@
 
         .thumbnail-box {
             display: flex;
-            width: 40vw;
-            height: 30vh;
+            width: 100vh;
+            height: 35vh;
             align-items: center;
             justify-content: center;
-            border: .25rem solid black;
+            border: .5rem solid black;
             border-radius: 1rem;
         }
 
         .site-link {
-            padding: .3rem 1.5rem .8rem;
+            padding: .75rem 1.5rem .8rem;
             margin: 0;
+            font-size: 4.5vmin;
             text-decoration: none;
-            height: 1rem;
             text-transform: capitalize;
             filter: none;
+            border-radius: 2vmin;
             box-shadow: 0 0 6rem rgb(0, 0, 0);
         }
     }

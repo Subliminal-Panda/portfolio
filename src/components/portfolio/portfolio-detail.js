@@ -54,11 +54,11 @@ export default class PortfolioDetail extends Component {
             backgroundImage: "url(" + banner_image_url + ")",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center center",
+            backgroundPosition: "top center",
         }
 
         const logoStyles = {
-            height: "25vh",
+            height: "20vh",
             width: "auto",
         }
 
