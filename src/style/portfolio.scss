@@ -105,7 +105,39 @@
   justify-content: space-evenly;
 
   .btn {
+    padding: .5vw;
+    font-size: 2vw;
     margin: 0 0 .75rem;
     width: 24vw;
+    border-radius: 1vw;
   }
+}
+
+.app-wrapper, body, .container, .container-contents {
+  overflow: auto;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: .75vw;
+}
+::-webkit-scrollbar:hover {
+  width: .75vw;
+}
+
+::-webkit-scrollbar-track {
+  background: $offwhite;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $charcoal;
+  border-radius: .5rem;
+  border: .25rem solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $teal;
+  border-radius: .5rem;
+  border: .2rem solid transparent;
+  background-clip: content-box;
 }
