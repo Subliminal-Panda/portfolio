@@ -6,9 +6,8 @@
 
     .carousel {
         position: absolute;
-        right: 0;
-        width: calc(100vw - 66vh);
-        // height: calc(100vh - (5.75rem));
+        right: 1.25vw;
+        width: calc(96.25vw - 66vmin);
         max-height: 88vh;
         display: flex;
         justify-content: center;
@@ -24,18 +23,15 @@
 
         .thumbs-wrapper {
             max-height: 88vh;
-            // min-height: rem));
-            // height: calc(100vh - (5.75rem));
             padding: 0;
             margin: 0;
             .thumbs {
                 margin: 0;
                 padding: 0;
                 display: grid;
-                width: 64vw;
+                width: calc(96.25vw - 66vmin);
                 max-height: 88vh;
-                // min-height: calc(100vh - (5.75rem));
-                grid-template-columns: repeat(9, 6.5vw);
+                grid-template-columns: repeat(9, 1fr);
                 grid-template-rows: repeat(7, 12.5vh);
                 transform: none !important;
                 justify-content: center;
@@ -43,22 +39,22 @@
 
                 .thumb {
                     max-height: 12.5vh;
-                    max-width: 6.5vw;
-                    // min-height: 12.5vh;
-                    min-width: 6.5vw;
+                    max-width: 100%;
+                    min-width: 100%;
                     overflow: hidden;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    // border: .25rem solid black;
                     border-radius: 1rem;
                     padding: 0;
 
                 }
                 .selected {
+                    box-shadow: inset 0 0 0 1rem $blue;
+                    border: .4rem solid $blue;
+                    padding: 0;
+                    margin: 0;
                     background-color: $blue;
-                    border: .2rem solid $blue;
-                    padding: -0.2rem;
                 }
             }
         }
@@ -68,9 +64,6 @@
     .carousel-slider {
         left: 1.25vw;
         width: 35.75vw;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         max-height: 88vh;
         border-radius: 2rem;
 
@@ -83,13 +76,11 @@
         color: rgba(0,0,0,0);
         background-color: rgba(0,0,0,0);
         opacity: 0%;
-        // visibility: hidden;
     }
     .control-arrow:before, .control-prev:before, .control-next:before, .control-arrow:after, .control-prev:after, .control-next:after {
         color: rgba(0,0,0,0);
         background-color: rgba(0,0,0,0);
         opacity: 0%;
-        // visibility: hidden;
     }
 
 

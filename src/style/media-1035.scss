@@ -132,7 +132,6 @@
             .site-link {
                 padding: .75rem 1.5rem .8rem;
                 margin: 0;
-                // font-size: 4.5vw;
                 text-decoration: none;
                 text-transform: capitalize;
                 filter: none;
@@ -141,4 +140,28 @@
             }
         }
     }
+
+    .carousel-root {
+        margin-bottom: 1.25vh;
+
+        .carousel {
+
+            .thumbs-wrapper {
+                .thumbs {
+                    grid-template-columns: repeat(4, 7.75vw);
+                    grid-template-rows: repeat(15, 5.87vh);
+
+                    .thumb {
+                        max-height: 5.87vh;
+                    }
+                }
+            }
+        }
+    }
+
+    //for slideshow specifically
+    body {
+        height: calc(88vh + 5.75rem + 13vw);
+    }
+
 }

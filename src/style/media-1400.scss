@@ -1,0 +1,18 @@
+﻿@media screen and (max-aspect-ratio: 1400/1000) {
+    .carousel-root {
+
+        .carousel {
+
+            .thumbs-wrapper {
+                .thumbs {
+                    grid-template-columns: repeat(7, 1fr);
+                    grid-template-rows: repeat(9, 9.77vh);
+
+                    .thumb {
+                        max-height: 9.77vh;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿@media screen and (max-aspect-ratio: 700/1000) {
+    body {
+        height: calc(5.75rem + 218vw);
+    }
+    .carousel-root {
+
+        .carousel {
+
+            .thumbs-wrapper {
+                position: absolute;
+                top: 127.5vw;
+            }
+        }
+    }
+}

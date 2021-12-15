@@ -1,0 +1,61 @@
+﻿@media screen and (max-aspect-ratio: 1000/1000) {
+    body {
+        height: calc(91.5vh + 5.75rem + 88vw);
+    }
+    .carousel-root {
+
+        .carousel {
+
+            .thumbs-wrapper {
+                position: absolute;
+                top: 89.5vh;
+                right: 1.25vw;
+                min-width: 95vw;
+                max-width: 95vw;
+
+                padding: 0;
+                margin: 0;
+
+                .thumbs {
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    min-width: 95vw;
+                    max-width: 95vw;
+                    grid-template-columns: repeat(10, 9.5vw);
+                    grid-template-rows: repeat(6, 12.66vw);
+                    justify-content: center;
+                    align-items: center;
+
+                    .thumb {
+                        max-height: 12.66vw;
+                        max-width: 9.5vw;
+                        min-width: 9.5vw;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 1rem;
+                        padding: 0;
+
+                    }
+                }
+            }
+        }
+
+
+        .carousel-slider {
+            position: absolute;
+            top: calc(3.5vmax + 11.1rem);
+            left: 50vw;
+            transform: translate(-50%);
+            max-width: 95vw;
+            max-height: 126vw;
+            border-radius: 2rem;
+
+            button {
+                opacity: 0%;
+            }
+        }
+    }
+}
