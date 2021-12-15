@@ -126,18 +126,27 @@
 
 ::-webkit-scrollbar-track {
   background: $offwhite;
+  // box-shadow:
+  // inset .1rem .1rem .1rem 0 black,
+  // inset -.1rem -.1rem .1rem 0 white;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $charcoal;
+  background: $blue;
   border-radius: .5rem;
-  border: .25rem solid transparent;
+  border: .1rem solid rgba(0,0,0,.15);
   background-clip: content-box;
+  box-shadow:
+  inset .1rem .1rem .1rem 0 white,
+  inset -.1rem -.1rem .1rem 0 black;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: $teal;
+  background: $dark-teal;
   border-radius: .5rem;
-  border: .2rem solid transparent;
+  border: .1rem solid $teal;
   background-clip: content-box;
+  box-shadow:
+  inset .1rem .1rem .1rem 0 white,
+  inset -.1rem -.1rem .1rem 0 black;
 }
