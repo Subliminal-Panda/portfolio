@@ -31,8 +31,6 @@ import "../../../../static/assets/images/slideshow/subliminalPanda/26.jpg"
 import "../../../../static/assets/images/slideshow/subliminalPanda/27.jpg"
 import "../../../../static/assets/images/slideshow/subliminalPanda/28.jpg"
 import "../../../../static/assets/images/slideshow/subliminalPanda/29.jpg"
-import "../../../../static/assets/images/slideshow/subliminalPanda/30.jpg"
-import "../../../../static/assets/images/slideshow/subliminalPanda/31.jpg"
 
 export default function BadToTheBone()
 {
@@ -41,7 +39,7 @@ export default function BadToTheBone()
     const fillArray = () => {
         const allImages = []
 
-        for(let i = 1; i < 32; i++ ) {
+        for(let i = 1; i < 30; i++ ) {
             allImages.push(
                 <div className="portfolio-slideshow-wrapper">
                     <img className="portfolio-image-wrapper" src={`../../../../static/assets/images/slideshow/subliminalPanda/${i}.jpg`} />

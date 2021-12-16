@@ -53,13 +53,6 @@ import "../../../../static/assets/images/slideshow/sketches/48.jpg"
 import "../../../../static/assets/images/slideshow/sketches/49.jpg"
 import "../../../../static/assets/images/slideshow/sketches/50.jpg"
 import "../../../../static/assets/images/slideshow/sketches/51.jpg"
-import "../../../../static/assets/images/slideshow/sketches/52.jpg"
-import "../../../../static/assets/images/slideshow/sketches/53.jpg"
-import "../../../../static/assets/images/slideshow/sketches/54.jpg"
-import "../../../../static/assets/images/slideshow/sketches/55.jpg"
-import "../../../../static/assets/images/slideshow/sketches/56.jpg"
-import "../../../../static/assets/images/slideshow/sketches/57.jpg"
-import "../../../../static/assets/images/slideshow/sketches/58.jpg"
 
 export default function Sketches()
 {
@@ -68,7 +61,7 @@ export default function Sketches()
     const fillArray = () => {
         const allImages = []
 
-        for(let i = 1; i < 59; i++ ) {
+        for(let i = 1; i < 52; i++ ) {
             allImages.push(
                 <div className="portfolio-slideshow-wrapper">
                     <img className="portfolio-image-wrapper" src={`../../../../static/assets/images/slideshow/sketches/${i}.jpg`} />

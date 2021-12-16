@@ -34,7 +34,6 @@ import "../../../../static/assets/images/slideshow/badToTheBone/29.jpg"
 import "../../../../static/assets/images/slideshow/badToTheBone/30.jpg"
 import "../../../../static/assets/images/slideshow/badToTheBone/31.jpg"
 import "../../../../static/assets/images/slideshow/badToTheBone/32.jpg"
-import "../../../../static/assets/images/slideshow/badToTheBone/33.jpg"
 
 export default function BadToTheBone()
 {
@@ -43,7 +42,7 @@ export default function BadToTheBone()
     const fillArray = () => {
         const allImages = []
 
-        for(let i = 1; i < 34; i++ ) {
+        for(let i = 1; i < 33; i++ ) {
             allImages.push(
                 <div className="portfolio-slideshow-wrapper">
                     <img className="portfolio-image-wrapper" src={`../../../../static/assets/images/slideshow/badToTheBone/${i}.jpg`} />
