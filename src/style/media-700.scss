@@ -1,7 +1,4 @@
 ﻿@media screen and (max-aspect-ratio: 700/1000) {
-    // body {
-    //     height: calc(5.75rem + 218vw);
-    // }
     .carousel-root {
 
         .carousel {
@@ -29,6 +26,21 @@
             .thumbnail-box {
                 flex: 1;
                 margin-bottom: 1vh;
+            }
+        }
+    }
+
+    .homepage-wrapper {
+
+        .portfolio-items-wrapper {
+            .portfolio-item-wrapper {
+                .img-text-wrapper {
+                    .item-title-wrap {
+                        .item-title {
+                            font-size: 5.5vw;
+                        }
+                    }
+                }
             }
         }
     }
