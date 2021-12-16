@@ -8,6 +8,7 @@
             max-height: 6.5vw;
             min-height: 6.5vw;
             gap: 3.5vw;
+            margin-bottom: 5vw;
         }
 
         .left-side {
@@ -52,7 +53,6 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        gap: 5vw;
         height: 25vw;
         min-height: 25vw;
     }
@@ -272,7 +272,7 @@
             }
 
             .content {
-                line-height: 1.5rem;
+                line-height: auto;
             }
         }
     }
