@@ -78,8 +78,15 @@
 .container-contents {
     .blog-container {
         .content-container {
+
+            h1 {
+                font-size: 5vmin;
+            }
             .content {
-                font-size: 2.5vh;
+                font-size: 3.75vmin;
+            }
+            .blog-item-details {
+                font-size: 3.25vmin;
             }
         }
     }
@@ -93,8 +100,8 @@
 }
 
 .blog-item-details {
-    font-size: 1.5vw;
+    // font-size: 1.5vw;
     color: $blue;
     width: 76vw;
-    line-height: 2vw;
+    // line-height: 2vw;
 }
