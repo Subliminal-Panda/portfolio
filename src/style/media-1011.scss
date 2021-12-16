@@ -6,7 +6,7 @@
             .thumbs-wrapper {
                 .thumbs {
                     grid-template-columns: repeat(4, 7.5vw);
-                    grid-template-rows: repeat(15, 5.87vh);
+                    grid-auto-rows: 5.87vh;
 
                     .thumb {
                         max-width: 7.5vw;

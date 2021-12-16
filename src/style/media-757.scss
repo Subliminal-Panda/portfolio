@@ -34,4 +34,51 @@
             }
         }
     }
+
+    .contact-page {
+        display: flex;
+        height: calc(99vh - 35vw);
+        flex-direction: column;
+
+        .content-left-column {
+            flex: 1;
+            max-height: 100%;
+        }
+        .content-right-column {
+            max-width: 100vw;
+            min-width: 100vw;
+            max-height: fit-content;
+            flex: 0;
+            // max-height: 70vw;
+            // min-height: 50vw;
+            // height: 60vw;
+            .contact-wrap {
+                max-height: fit-content;
+                max-width: 100vw;
+                gap: .5rem;
+
+                h1 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .contact-line {
+                    width: max-content;
+                    margin-left: 1vw;
+                    h2 {
+                        text-indent: 5vw;
+                        font-size: 4vw;
+                        line-height: 5vw;
+                        margin: 0;
+                    }
+
+                    .icon {
+                        text-indent: 5vw;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 }

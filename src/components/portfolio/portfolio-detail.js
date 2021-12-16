@@ -54,7 +54,7 @@ export default class PortfolioDetail extends Component {
             backgroundImage: "url(" + banner_image_url + ")",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "top center",
+            backgroundPosition: "top left",
         }
 
         const logoStyles = {
@@ -79,7 +79,7 @@ export default class PortfolioDetail extends Component {
                 </div>
                 <div className="bottom-content-wrapper">
                     <div style={thumbnailStyles} className="thumbnail-box">
-                        <a href={url} className="btn site-link" target="_blank">
+                        <a href={url} className="btn site-link" >
                         VISIT: {name}
                         </a>
                     </div>

@@ -5,10 +5,12 @@
 
             .thumbs-wrapper {
                 .thumbs {
-                    grid-template-columns: repeat(8, 1fr);
-                    grid-template-rows: repeat(8, 11vh);
+                    grid-template-columns: repeat(8, calc((96.25vw - 66vmin)/8));
+                    grid-auto-rows: 11vh;
 
                     .thumb {
+                        max-width: calc((96.25vw - 66vmin)/8);
+                        min-width: calc((96.25vw - 66vmin)/8);
                         max-height: 11vh;
                     }
 
@@ -18,5 +20,10 @@
                 }
             }
         }
+    }
+
+    .content-page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
 }

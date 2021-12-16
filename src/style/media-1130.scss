@@ -5,11 +5,13 @@
 
             .thumbs-wrapper {
                 .thumbs {
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-template-rows: repeat(15, 5.87vh);
+                    grid-template-columns: repeat(5, calc((96.25vw - 66vmin)/5));
+                    grid-auto-rows: 7.33vh;
 
                     .thumb {
-                        max-height: 5.87vh;
+                        max-width: calc((96.25vw - 66vmin)/5);
+                        min-width: calc((96.25vw - 66vmin)/5);
+                        max-height: 7.33vh;
                     }
                 }
             }

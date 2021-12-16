@@ -1,7 +1,7 @@
 ﻿@media screen and (max-aspect-ratio: 1000/1000) {
-    body {
-        height: calc(91.5vh + 5.75rem + 88vw);
-    }
+    // body {
+    //     height: calc(91.5vh + 5.75rem + 88vw);
+    // }
     .carousel-root {
 
         .carousel {
@@ -23,7 +23,7 @@
                     min-width: 95vw;
                     max-width: 95vw;
                     grid-template-columns: repeat(10, 9.5vw);
-                    grid-template-rows: repeat(6, 12.66vw);
+                    grid-auto-rows: 12.66vw;
                     justify-content: center;
                     align-items: center;
 
@@ -46,7 +46,7 @@
 
         .carousel-slider {
             position: absolute;
-            top: calc(3.5vmax + 11.1rem);
+            top: 35vw;
             left: 50vw;
             transform: translate(-50%);
             max-width: 95vw;

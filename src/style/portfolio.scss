@@ -97,7 +97,7 @@
 .image-blur {
   background-color: rgb(160, 160, 160);
   transition: .3s ease-in-out;
-  filter: brightness(23%);
+  filter: brightness(23.5%);
 }
 .filter-buttons {
   width: 100%;
@@ -106,7 +106,7 @@
 
   .btn {
     padding: .5vw;
-    font-size: 2vw;
+    font-size: 1.5vmax;
     margin: 0 0 .75rem;
     width: 24vw;
     border-radius: 1vw;

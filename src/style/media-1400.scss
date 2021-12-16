@@ -5,10 +5,12 @@
 
             .thumbs-wrapper {
                 .thumbs {
-                    grid-template-columns: repeat(7, 1fr);
-                    grid-template-rows: repeat(9, 9.77vh);
+                    grid-template-columns: repeat(7, calc((96.25vw - 66vmin)/7));
+                    grid-auto-rows: 9.77vh;
 
                     .thumb {
+                        max-width: calc((96.25vw - 66vmin)/7);
+                        min-width: calc((96.25vw - 66vmin)/7);
                         max-height: 9.77vh;
                     }
                 }

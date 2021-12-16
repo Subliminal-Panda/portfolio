@@ -6,8 +6,8 @@
 
   .right-side {
     display: flex;
-    line-height: 1.75rem;
-    font-size: 1.75rem;
+    line-height: 1.5vmax;
+    font-size: 1.5vmax;
     a {
       margin-left: 1rem;
       cursor: pointer;
@@ -46,8 +46,8 @@
 
 
     .nav-link {
-      font-size: 1.5rem;
-      line-height: 1.5rem;
+      font-size: 1.5vmax;
+      line-height: 1.5vmax;
       border-bottom: .2rem solid transparent;
 
       &:hover {

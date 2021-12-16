@@ -11,13 +11,13 @@ import { Link } from "react-router-dom";
 
 export default function Contact () {
     return (
-        <div className="content-page-wrapper two-column">
+        <div className="content-page-wrapper two-column contact-page">
             <div
             className="content-left-column"
             style={{
                 background: "url(" + contactImage + ") no-repeat",
                 backgroundSize: "cover",
-                backgroundPosition: "center center",
+                backgroundPosition: "top center",
             }}>
             </div>
             <div className="content-right-column">
@@ -44,7 +44,7 @@ export default function Contact () {
                             <h2>Sandy, UT 84092</h2>
                         </div>
                     </div>
-                    <Link className="external-link" to={{ pathname: "https://github.com/Subliminal-Panda" }} target="_blank" >
+                    <Link className="external-link" to={{ pathname: "https://github.com/Subliminal-Panda" }} >
                         <div href="https://github.com/Subliminal-Panda" className="contact-line">
                             <div className="icon" >
                                 <FontAwesomeIcon href="https://github.com/Subliminal-Panda" icon={faGithub} />
@@ -54,7 +54,7 @@ export default function Contact () {
                             </h2>
                         </div>
                     </Link>
-                    <Link className="external-link" to={{ pathname: "https://www.linkedin.com/in/tmouritsen57/" }} target="_blank" >
+                    <Link className="external-link" to={{ pathname: "https://www.linkedin.com/in/tmouritsen57/" }} >
                         <div className="contact-line">
                             <div className="icon" >
                                 <FontAwesomeIcon href="https://www.linkedin.com/in/tmouritsen57/" icon={faLinkedinIn} />
