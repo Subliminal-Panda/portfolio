@@ -20,9 +20,9 @@
                 align-self: flex-start;
                 cursor: pointer;
                 color: $dark-teal;
-                font-size: 1.75rem;
+                font-size: 2.5rem;
                 position: relative;
-                right: 5.5rem;
+                right: 3vw;
                 top: 4.4rem;
 
                 &:hover {
@@ -33,8 +33,9 @@
 
         .new-blog-link {
             position: fixed;
-            right: 0;
-            margin: 3rem 12rem 0 0;
+            right: 7vw;
+            top: 11vh;
+            // margin: 3rem 12rem 0 0;
             a {
                 color: $dark-teal;
                 font-size: 3rem;
@@ -58,21 +59,8 @@
 
         h1 {
             margin-top: 3rem;
-            font-size: 2.15rem;
+            font-size: 2vw;
             color: $text-teal;
-            // -webkit-text-stroke-width: .15rem;
-            // -webkit-text-stroke-color: $dark-teal;
-            // text-shadow:
-            //             .1rem .1rem $dark-teal,
-            //             -.1rem -.1rem $dark-teal,
-            //             -.1rem .1rem $dark-teal,
-            //             .1rem -.1rem $dark-teal,
-            //             .11rem 0rem $dark-teal,
-            //             -.11rem 0rem $dark-teal,
-            //             0rem .11rem $dark-teal,
-            //             0 -.11rem $dark-teal;
-            // -webkit-text-stroke: .05rem $charcoal;
-            // text-stroke: .05rem $charcoal;
         }
 
         .featured-image-wrapper {
@@ -93,13 +81,14 @@
 
 .blog-item-title {
     position: relative;
-    right: 2rem;
-    top: 1rem;
+    right: 1vw;
+    top: 1vh;
     max-width: 72vw;
 }
 
 .blog-item-details {
+    font-size: 1.5vw;
     color: $blue;
     width: 76vw;
-    line-height: 1.5rem;
+    line-height: 2vw;
 }

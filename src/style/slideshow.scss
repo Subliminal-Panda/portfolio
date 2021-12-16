@@ -83,9 +83,9 @@
         opacity: 0%;
     }
 
+    [aria-label], [aria-label]:before, [aria-label]:after, [aria-label]:active, [aria-label]:focus, [aria-label]:visited, [aria-label]:focus-visible {
+        background-color: rgba(0,0,0,0) !important;
+        color: rgba(0,0,0,0) !important;
+    }
 
-}
-[aria-label], [aria-label]:before, [aria-label]:after, [aria-label]:active, [aria-label]:focus, [aria-label]:visited, [aria-label]:focus-visible {
-    background-color: rgba(0,0,0,0) !important;
-    color: rgba(0,0,0,0) !important;
 }
