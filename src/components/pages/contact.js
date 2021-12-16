@@ -44,26 +44,26 @@ export default function Contact () {
                             <h2>Sandy, UT 84092</h2>
                         </div>
                     </div>
-                    <Link className="external-link" to={{ pathname: "https://github.com/Subliminal-Panda" }} >
-                        <div href="https://github.com/Subliminal-Panda" className="contact-line">
+                    <a className="external-link" href="https://github.com/Subliminal-Panda" >
+                        <div  className="contact-line">
                             <div className="icon" >
-                                <FontAwesomeIcon href="https://github.com/Subliminal-Panda" icon={faGithub} />
+                                <FontAwesomeIcon icon={faGithub} />
                             </div>
                             <h2>
                                 https://github.com/Subliminal-Panda
                             </h2>
                         </div>
-                    </Link>
-                    <Link className="external-link" to={{ pathname: "https://www.linkedin.com/in/tmouritsen57/" }} >
+                    </a>
+                    <a className="external-link" href="https://www.linkedin.com/in/tmouritsen57/">
                         <div className="contact-line">
                             <div className="icon" >
-                                <FontAwesomeIcon href="https://www.linkedin.com/in/tmouritsen57/" icon={faLinkedinIn} />
+                                <FontAwesomeIcon  icon={faLinkedinIn} />
                             </div>
-                            <h2 href="https://www.linkedin.com/in/tmouritsen57/">
+                            <h2 >
                             https://www.linkedin.com/in/tmouritsen57/
                             </h2>
                         </div>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

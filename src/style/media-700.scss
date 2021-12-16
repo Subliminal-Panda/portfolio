@@ -1,17 +1,16 @@
 ﻿@media screen and (max-aspect-ratio: 700/1000) {
-    .carousel-root {
+    // .carousel-root {
 
-        .carousel {
+    //     .carousel {
 
-            .thumbs-wrapper {
-                position: absolute;
-                top: 127.5vw;
-            }
-        }
-    }
+    //         .thumbs-wrapper {
+    //             transform: translate(-33.5vw, 128vw);
+    //         }
+    //     }
+    // }
 
     .portfolio-detail-wrapper {
-        height: calc(100vh - 35vw);
+        height: 100%;
         display: flex;
         flex-direction: column;
 

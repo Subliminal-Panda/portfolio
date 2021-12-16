@@ -1,18 +1,18 @@
 ﻿.content-page-wrapper {
     width: 100vw;
-    height: calc(100vh - (5.75rem));
-    max-height: calc(100vh - (5.75rem));
+    height: $past-nav;
+    max-height: $past-nav;
     overflow: hidden;
 }
 .content-left-column {
-    height: calc(100vh - (5.75rem));
-    max-height: calc(100vh - (5.75rem));
+    height: $past-nav;
+    max-height: $past-nav;
     overflow: hidden;
 }
 
 .content-right-column {
-    height: calc(100vh - (5.75rem));
-    max-height: calc(100vh - (5.75rem));
+    height: $past-nav;
+    max-height: $past-nav;
     overflow: hidden;
     display: flex;
     flex-direction: column;

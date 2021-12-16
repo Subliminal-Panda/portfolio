@@ -1,6 +1,13 @@
 ﻿@media screen and (max-aspect-ratio: 1035/1000) {
     .nav-wrapper {
         margin: 5vw 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        min-height: fit-content;
+        max-height: fit-content;
+
         .right-side {
             font-size: 6.5vw;
             line-height: 6.5vw;
@@ -12,9 +19,9 @@
         }
 
         .left-side {
-            height: 13.5vw;
-            max-height: 13.5vw;
-            min-height: 13.5vw;
+            height: fit-content;
+            max-height: fit-content;
+            min-height: fit-content;
             width: 100vw;
             display: grid;
             justify-content: center;
@@ -49,12 +56,6 @@
                 text-align: center;
             }
         }
-
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        height: 25vw;
-        min-height: 25vw;
     }
 
     .homepage-wrapper {
@@ -106,8 +107,6 @@
     }
 
     .portfolio-detail-wrapper {
-        height: calc(60vh + 19.5vw + 4rem);
-        height: fit-content;
 
         .banner {
             height: 30vh;
@@ -130,15 +129,17 @@
         }
         .bottom-content-wrapper {
             width: 100%;
-            height: 30vh;
+            // min-height: 30vh;
+            flex: 1;
 
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
 
             .thumbnail-box {
-                width: 90vw;
-                height: 25vh;
+                width: 95vw;
+                // min-height: 25vh;
                 align-items: center;
                 justify-content: center;
                 border: .5rem solid black;
@@ -201,9 +202,10 @@
     }
 
     .contact-page {
-        padding-top: 2vh;
         min-width: 100vw;
-        height: 100%;
+        min-height: fit-content;
+        max-height: fit-content;
+        height: fit-content;
 
         .content-left-column {
             min-width: 90vw;
@@ -215,7 +217,13 @@
         .content-right-column {
             max-width: 100vw;
             min-width: 100vw;
+            max-height: fit-content;
+            height: fit-content;
+            min-height: fit-content;
             .contact-wrap {
+                max-height: fit-content;
+                height: fit-content;
+                min-height: fit-content;
                 max-width: 100vw;
                 gap: .5rem;
 
@@ -270,10 +278,6 @@
                     object-fit: cover;
                 }
             }
-
-            .content {
-                line-height: auto;
-            }
         }
     }
 
@@ -302,4 +306,6 @@
         width: 76vw;
         line-height: 4.5vw;
     }
+
+
 }

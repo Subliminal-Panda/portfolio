@@ -1,7 +1,7 @@
 ﻿.auth-page-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: calc(100vh - (5.75rem));
+  height: $past-nav;
 
   .left-column {
     background-size: cover;

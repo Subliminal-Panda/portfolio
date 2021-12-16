@@ -72,9 +72,15 @@
                 object-fit: cover;
             }
         }
+    }
+}
 
-        .content {
-            line-height: auto;
+.container-contents {
+    .blog-container {
+        .content-container {
+            .content {
+                font-size: 2.5vh;
+            }
         }
     }
 }
