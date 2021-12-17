@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border: 1vh solid white;
+  border-top: none;
 
   .portfolio-item-wrapper {
     border: 1vh solid white;
@@ -101,15 +102,19 @@
 }
 
 .filter-buttons {
-  width: 100%;
+  height: fit-content;
+  width: calc(100vw - 4vh);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+
+  gap: 2vh;
+  margin: 0 2vh 1vh;
 
   .btn {
     padding: .5vh;
     font-size: 3vh;
-    margin: 0 0 .75rem;
-    width: 24vw;
+    // margin: 0 0 .75rem;
+    width: 100%;
     border-radius: 1.6vh;
   }
 }
