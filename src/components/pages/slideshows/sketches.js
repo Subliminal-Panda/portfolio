@@ -60,7 +60,11 @@ export default function Sketches()
 
     const fillArray = () => {
         const allImages = []
-
+        // allImages.push(
+        //     <div className="portfolio-slideshow-wrapper">
+        //             <img className="portfolio-image-wrapper" src="https://live.staticflickr.com/65535/51752442177_d596305619_h.jpg" />
+        //         </div>
+        // )
         for(let i = 1; i < 52; i++ ) {
             allImages.push(
                 <div className="portfolio-slideshow-wrapper">
