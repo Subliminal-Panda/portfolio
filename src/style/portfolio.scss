@@ -1,10 +1,11 @@
 ﻿.portfolio-items-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border: 1vh solid white;
 
   .portfolio-item-wrapper {
-
-    background-color: rgb(160, 160, 160);
+    border: 1vh solid white;
+    background-color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
 
@@ -60,7 +61,6 @@
           opacity: 0%;
           font-size: 1.5vmax;
           font-weight: 400;
-          // height: 7vmax;
         }
       }
     }
