@@ -7,11 +7,15 @@
 
                 .item-title-wrap {
                     flex-direction: column;
-                    gap: 1.5rem;
+                    gap: 1.25vmax;
+
+                    .item-title {
+                        font-size: 2.25vmax;
+                    }
 
                     .logo-wrapper {
                         .logo {
-                            height: 7vmax;
+                            height: 6.5vmax;
                             padding: .75vmax;
                         }
                     }
