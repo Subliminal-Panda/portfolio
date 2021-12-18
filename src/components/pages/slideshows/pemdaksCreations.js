@@ -24,7 +24,6 @@ export default function BadToTheBone()
             )
         }
 
-        console.log("all images:", allImages)
         setImageArray([allImages])
     }
 

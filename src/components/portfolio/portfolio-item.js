@@ -17,7 +17,6 @@ export default class PortfolioItem extends Component
     handleMouseEnter()
     {
         this.setState( { portfolioItemClass: "image-blur" } );
-        console.log("position:", this.props.item.position);
     }
 
     handleMouseLeave()

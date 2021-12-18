@@ -69,7 +69,6 @@ export default function Sketches()
             )
         }
 
-        console.log("all images:", allImages)
         setImageArray([allImages])
     }
 

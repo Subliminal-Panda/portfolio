@@ -23,7 +23,6 @@ export default class PortfolioDetail extends Component {
                 this.setState( {
                     portfolioItem: response.data.portfolio_item,
                 } );
-                console.log("response from getPortfolioItem", response)
             } )
             .catch( error =>
             {

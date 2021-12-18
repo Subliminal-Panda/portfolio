@@ -21,7 +21,6 @@ export default class PortfolioContainer extends Component
     }
 
     handleResetFilter() {
-        console.log("portfolio items:", this.state.data)
         this.setState({
             filtered: this.state.data
         })
@@ -36,7 +35,6 @@ export default class PortfolioContainer extends Component
                 return item.category === filter;
             } )
         } )
-        console.log("filtered:", this.state.filtered)
     }
 
     getPortfolioItems()
@@ -52,7 +50,7 @@ export default class PortfolioContainer extends Component
             } )
             .catch( error =>
             {
-                console.log( error );
+                console.log("error getting portfolio items:", error);
             } );
     }
 
@@ -60,7 +58,6 @@ export default class PortfolioContainer extends Component
     {
         return this.state.filtered.map( item =>
         {
-            console.log("portfolio item:", item)
             return <PortfolioItem key={ item.id } item={ item } />;
         } );
     }
