@@ -1,5 +1,4 @@
 ﻿import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import BlogItem from '../blog/blog-item';
@@ -62,7 +61,7 @@ export default class Blog extends Component {
         if(this.state.isLoading || this.state.blogItems.length === this.state.totalCount) {
             return;
         }
-        if(window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
+        if((parseInt(document.documentElement.clientHeight + document.documentElement.scrollTop)) === (parseInt(document.documentElement.offsetHeight))) {
             this.getBlogItems();
         }
     }
