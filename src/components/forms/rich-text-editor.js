@@ -87,6 +87,7 @@ export default class RichTextEditor extends Component {
 'rgb(127, 127, 127)',
 'rgb(191,191,191)',
 'rgb(255,255,255)',
+'rgba(0,0,0,0)'
 ],
   }
                 }}
