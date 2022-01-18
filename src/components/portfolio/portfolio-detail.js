@@ -68,6 +68,17 @@ export default class PortfolioDetail extends Component {
             backgroundPosition: "center center",
         }
 
+        const parse = (input) => {
+            const toParse = new String(input)
+            if(toParse.startsWith("http") || toParse.startsWith("https")) {
+                return(toParse)
+            // } else if(toParse.startsWith("https://beautiful-portfolio.herokuapp.com/portfolio/")) {
+            //     return(toParse.replace("https://beautiful-portfolio.herokuapp.com/portfolio/", ""))
+            } else {
+                return(`http://${toParse}`)
+            }
+        }
+
         return (
             <div className="portfolio-detail-wrapper">
                 <div className="banner" style={bannerStyles}>
@@ -78,7 +89,7 @@ export default class PortfolioDetail extends Component {
                 </div>
                 <div className="bottom-content-wrapper">
                     <div style={thumbnailStyles} className="thumbnail-box">
-                        <a href={url} className="btn site-link" >
+                        <a href={parse(url)} className="btn site-link" >
                         VISIT: {name}
                         </a>
                     </div>
