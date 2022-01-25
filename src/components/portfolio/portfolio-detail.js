@@ -72,8 +72,6 @@ export default class PortfolioDetail extends Component {
             const toParse = new String(input)
             if(toParse.startsWith("http") || toParse.startsWith("https")) {
                 return(toParse)
-            // } else if(toParse.startsWith("https://beautiful-portfolio.herokuapp.com/portfolio/")) {
-            //     return(toParse.replace("https://beautiful-portfolio.herokuapp.com/portfolio/", ""))
             } else {
                 return(`http://${toParse}`)
             }

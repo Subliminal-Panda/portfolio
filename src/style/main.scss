@@ -1,6 +1,35 @@
+html {
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    font-size: 1.5vmin;
+    cursor: default;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Capriola", sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  h1, h2, h3, h4, h5 {
+      font-family: 'Baloo Bhai 2', cursive;
+  }
+
+  .container {
+      min-width: 100vw;
+      max-width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      div {
+        max-width: 100vw;
+      }
+  }
+
 @import "./variables.scss";
 @import "./mixins.scss";
-@import "./base.scss";
 @import "./auth.scss";
 @import "./forms.scss";
 @import "./button.scss";

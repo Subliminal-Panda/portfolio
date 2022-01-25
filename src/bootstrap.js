@@ -1,3 +1,4 @@
+import "./style/main.scss";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
@@ -8,7 +9,6 @@ import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware()( createStore );
 
-import "./style/main.scss";
 
 function main()
 {

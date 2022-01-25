@@ -40,8 +40,7 @@ export default function Contact () {
                             <FontAwesomeIcon icon="map-marked-alt" />
                         </div>
                         <div>
-                            <h2>10251 S. CountryWood Dr.</h2>
-                            <h2>Sandy, UT 84092</h2>
+                            <h2>Sandy, UT</h2>
                         </div>
                     </div>
                     <a className="external-link" href="https://github.com/Subliminal-Panda" >
