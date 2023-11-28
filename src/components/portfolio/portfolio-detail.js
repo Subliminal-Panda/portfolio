@@ -69,7 +69,10 @@ export default class PortfolioDetail extends Component {
         }
 
         const parse = (input) => {
-            const toParse = new String(input)
+            let toParse = new String(input)
+            toParse = toParse.replace("beautiful-portfolio", "tm-portfolio-442a48ec7177")
+            toParse = toParse.replace("beautiful-chess", "beautiful-chess-5e1daff19641")
+            toParse = toParse.replace("http://tm57.xyz", "https://tm-url-shortener-49d1306dcb51.herokuapp.com/")
             if(toParse.startsWith("http") || toParse.startsWith("https")) {
                 return(toParse)
             } else {
