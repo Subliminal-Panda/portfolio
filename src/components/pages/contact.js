@@ -33,7 +33,7 @@ export default function Contact () {
                         <div className="icon" >
                             <FontAwesomeIcon icon="envelope-open-text" />
                         </div>
-                        <h2>tmouritsen57@gmail.com</h2>
+                        <h2>t.a.mouritsen@gmail.com</h2>
                     </div>
                     <div className="contact-line">
                         <div className="icon" >
